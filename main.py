@@ -30,8 +30,8 @@ intents.presences = True
 intents.members = True
 
 Bot = commands.Bot(command_prefix='T.',
-                   activity=discord.Activity(type=discord.ActivityType.listening, name="For FAQ's"),
-                   intents=intents, owner_id=OWNER_ID)
+                    activity=discord.Activity(type=discord.ActivityType.listening, name="For FAQ's"),
+                    intents=intents, owner_id=OWNER_ID)
 Bot.remove_command('help')
 
 cogs = ["cogs.utils", "cogs.fun", "cogs.mod", "cogs.search", 'cogs.talk',
