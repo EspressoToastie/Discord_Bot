@@ -34,8 +34,8 @@ Bot = commands.Bot(command_prefix='T.',
                     intents=intents, owner_id=OWNER_ID)
 Bot.remove_command('help')
 
-cogs = ["cogs.utils", "cogs.fun", "cogs.mod", "cogs.search", 'cogs.talk',
-        "cogs.agreetings", "cogs.aeconomy", "cogs.aminigames", "cogs.acommands", "cogs.linux"]
+cogs = ["cogs.utils", "cogs.fun", "cogs.mod",
+        "cogs.agreetings", "cogs.aeconomy", "cogs.aminigames", "cogs.acommands"]
 
 @Bot.event
 async def on_ready():
